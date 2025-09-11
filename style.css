@@ -28,11 +28,11 @@ body {
 
 .vote-option:hover {
     transform: translateY(-2px);
-    background-color: #e6f7e6;
+    background-color: #4A53EF;
 }
 
 .vote-option.selected {
     background-color: #4ade80;
     color: white;
-    border-color: #22c55e;
+    border-color: #4A53EF;
 }
