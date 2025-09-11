@@ -39,19 +39,16 @@ const teachersData = {
         { id: 'sci20', name: 'นางสาวศศิธร ตรีพิมล', image: 'chakrit.jpg' }
     ],
     thai: [
-        { id: 'thai1', name: 'นายจักรกฤษณ์ บัวลอย', image: 'jakkrit.jpg' },
-        { id: 'thai2', name: 'นางกรวรรณ คล่องยุทธ์', image: 'kornwan.jpg' },
-        { id: 'thai3', name: 'นางสาวจรรยงค์ บุญซัน', image: 'chanyong.jpg' },
-        { id: 'thai4', name: 'นางสาวบำเพ็ญ ขาวสง่า', image: 'bampen.jpg' },
-        { id: 'thai5', name: 'นางชุติมา อังกุลดี', image: 'chutima.jpg' },
-        { id: 'thai6', name: 'นายรัตนศักดิ์ ก้อนเพชร', image: 'rattanasak.jpg' },
-        { id: 'thai7', name: 'นายธนากร ชมเชย', image: 'thanakorn.jpg' },
-        { id: 'thai8', name: 'นางสาวณัฏฐนิช เยี่ยงมานิต', image: 'natthanit.jpg' },
-        { id: 'thai9', name: 'นางสาวทิพย์วัลย์ ทองดี', image: 'thipphawan.jpg' },
-        { id: 'thai10', name: 'นางสาววิราชิน ขันติสิทธิ์', image: 'wirachin.jpg' },
-        { id: 'thai11', name: 'นางสาวสุจิตรา กลิ่นสว่าง', image: 'sujitra.jpg' },
-        { id: 'thai12', name: 'นายวงศ์วรัณ ช้างพลาย', image: 'wongwaran.jpg' },
-        { id: 'thai13', name: 'นายอธิวัฒน์ พูลเพิ่ม', image: 'athiwat.jpg' }
+        { id: 'thai1', name: 'นางสาวสุชิรา แสงทองอร่าม', image: 'jakkrit.jpg' },
+        { id: 'thai2', name: 'นางพรอุมา แก้วจิตต์', image: 'kornwan.jpg' },
+        { id: 'thai3', name: 'นางสาวปรารถนา จันทร์ไทย', image: 'chanyong.jpg' },
+        { id: 'thai4', name: 'นางณัฐิกา ปัตยุรักษ์', image: 'bampen.jpg' },
+        { id: 'thai5', name: 'นางสาวกันยกานต์ จันชนะ', image: 'chutima.jpg' },
+        { id: 'thai6', name: 'นายเฉลิมศักดิ์ ลาภส่งผล', image: 'rattanasak.jpg' },
+        { id: 'thai7', name: 'นางสาวเปรมจิต ชินวงษ์', image: 'thanakorn.jpg' },
+        { id: 'thai8', name: 'นางสาวประเทือง บัวเผื่อน', image: 'natthanit.jpg' },
+        { id: 'thai9', name: 'นางสาวนงลักษณ์ แดงเพ็ง', image: 'thipphawan.jpg' },
+        { id: 'thai10', name: 'นางสาวปัณฑิตา พูลสวัสดิ์', image: 'wirachin.jpg' }
     ],
     foreign: [
         { id: 'foreign1', name: 'นางสาวจิราภรณ์ เหมือนอ่วม', image: 'chiraphon.jpg' },
