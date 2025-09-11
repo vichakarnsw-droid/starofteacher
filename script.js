@@ -72,51 +72,45 @@ const teachersData = {
         { id: 'foreign19', name: 'Ceng Jia qi', image: 'nitchnipha.jpg' }
     ],
     social: [
-        { id: 'soc1', name: 'นายธนากร ทองศิริ', image: 'thanakorn2.jpg' },
-        { id: 'soc2', name: 'นางสาวสิรีกร ทับทิมทอง', image: 'sireekorn.jpg' },
-        { id: 'soc3', name: 'นางสาวไอรินทร์ โกณฑา', image: 'airin.jpg' },
-        { id: 'soc4', name: 'นางสาวประภัสสร สิทธิศักดิ์', image: 'praphatson.jpg' },
-        { id: 'soc5', 'name': 'นางสาวพรนิภา เวียงวิเศษ', image: 'phonnipha.jpg' },
-        { id: 'soc6', name: 'นางทัสณียา แบบสังข์', image: 'thatsaneeya.jpg' },
-        { id: 'soc7', name: 'นางสาวสุภานัน เบญจมังคลารักษ์', image: 'suphanan.jpg' },
-        { id: 'soc8', name: 'นางสาวพัทธนันท์ ชนะภัย', image: 'phatthanan.jpg' },
-        { id: 'soc9', name: 'นางสาวสุชาดา ปลอยปลา', image: 'suchada.jpg' },
-        { id: 'soc10', name: 'นางสาวฌัชฌา พลีไพล', image: 'chatcha.jpg' },
-        { id: 'soc11', name: 'นางสาวศุภัทศจี โตใหญ่', image: 'suphatsajee.jpg' },
-        { id: 'soc12', name: 'นางสาวกรกนก บุญเดชา', image: 'kornkanok.jpg' },
-        { id: 'soc13', name: 'นางสาวสิริกัญญา อัมพสุวรรณ', image: 'sirikanya.jpg' },
-        { id: 'soc14', name: 'นางสาวประภาพรรณ ประกอบบุญ', image: 'praphaphan.jpg' },
-        { id: 'soc15', name: 'นายสหรัฐ แจ่มกระจ่าง', image: 'saharat.jpg' }
+        { id: 'soc1', name: 'นายชุมสิน กาญจนทอง', image: 'thanakorn2.jpg' },
+        { id: 'soc2', name: 'นางสาวรวิปรียา เทศแย้ม', image: 'sireekorn.jpg' },
+        { id: 'soc3', name: 'นางสาวบุบผา บุญส่ง', image: 'airin.jpg' },
+        { id: 'soc4', name: 'นางสาวภัทรานิษฐ์ แปงต่อม', image: 'praphatson.jpg' },
+        { id: 'soc5', 'name': 'นางสาวพรทิพย์ แดงชาติแท้', image: 'phonnipha.jpg' },
+        { id: 'soc6', name: 'นายสุระศักดิ์ ด้วงขวิด', image: 'thatsaneeya.jpg' },
+        { id: 'soc7', name: 'นายธีรศักดิ์ ชลรัตน์อมฤต', image: 'suphanan.jpg' },
+        { id: 'soc8', name: 'ว่าที่ร้อยตรี อนันต์ ชูช่วย', image: 'phatthanan.jpg' },
+        { id: 'soc9', name: 'นายจีรยศ สินธุวงษานนท์', image: 'suchada.jpg' },
+        { id: 'soc10', name: 'นางสาวจรรยา สุขขา', image: 'chatcha.jpg' }
     ],
     pe: [
-        { id: 'pe1', name: 'นายธีรวุฒิ แกละบังทอง', image: 'theerawut.jpg' },
-        { id: 'pe2', name: 'นายชัชวาล พูลสวัสดิ์', image: 'chatchawan.jpg' },
-        { id: 'pe3', name: 'นายอนุพงศ์ สุริฉาย', image: 'anuphong.jpg' },
-        { id: 'pe4', name: 'นางสาวเอมวิกา เพชรทอง', image: 'amwika.jpg' },
-        { id: 'pe5', name: 'นายจริพจน์ คงทัพ', image: 'charipot.jpg' },
-        { id: 'pe6', name: 'นางสาวทยากร งามน้อย', image: 'thayakorn.jpg' },
-        { id: 'pe7', name: 'นายกฤษณะ อินทโชติ', image: 'kritsana.jpg' }
+        { id: 'pe1', name: 'นายนันทวัฒน์ พรมหาชัย', image: 'theerawut.jpg' },
+        { id: 'pe2', name: 'นางพรรณี ครุฑเสม', image: 'chatchawan.jpg' },
+        { id: 'pe3', name: 'นายณัฐวุฒิ เชื้อปรางค์', image: 'anuphong.jpg' },
+        { id: 'pe4', name: 'นายอาชาวิน บุญเกิด', image: 'amwika.jpg' },
+        { id: 'pe5', name: 'นายทวีเกียรติ วงแหวน', image: 'charipot.jpg' }
     ],
     career: [
-        { id: 'car1', name: 'นางสาวจีรวรรณ สุขผล', image: 'jeerawan.jpg' },
-        { id: 'car2', name: 'นางสาวสุนารี ก๋าแก่น', image: 'sunaree.jpg' },
-        { id: 'car3', name: 'นางสาวปรวรรธ์น สอนเพ็ง', image: 'porawan.jpg' },
-        { id: 'car4', name: 'นายไพบูลย์ รอดทิม', image: 'paiboon.jpg' },
-        { id: 'car5', name: 'นางสาวปริณา คุณสุทธิ์', image: 'parina.jpg' }
+        { id: 'car1', name: 'นางนฤภร ราชานาค', image: 'jeerawan.jpg' },
+        { id: 'car2', name: 'นางชนัญกาญจน์ หอมกลิ่น', image: 'sunaree.jpg' },
+        { id: 'car3', name: 'นายโชติปกรณ์ ขวัญมงคล', image: 'porawan.jpg' },
+        { id: 'car4', name: 'นางราตรี อรชร', image: 'paiboon.jpg' },
+        { id: 'car5', name: 'นางสาวสาวิตรี วงษ์สวรรค์', image: 'parina.jpg' },
+        { id: 'car6', name: 'นางสาวปัทมา โสภาเลิศ', image: 'paiboon.jpg' },
+        { id: 'car7', name: 'นางสาวสุรางคนา ยงสุวรรณ', image: 'parina.jpg' },
+        { id: 'car8', name: 'นางสาวอัญศิกานต์ ยิ้มภากรณ์', image: 'paiboon.jpg' }
     ],
     art: [
-        { id: 'art1', name: 'นางสาวนัฐกานต์ หุ่นงาม', image: 'natthakan.jpg' },
-        { id: 'art2', name: 'นายวัลลภ แก้วกำเนิด', image: 'wanlop.jpg' },
-        { id: 'art3', name: 'นางสาวฐาวรดา วิเชียรฉาย', image: 'thaworada.jpg' },
-        { id: 'art4', name: 'นางชีวารัตน์ ยอดยิ่ง', image: 'chiwarat.jpg' },
-        { id: 'art5', name: 'นายพัลลภ อินทรสาร', image: 'phanlop.jpg' },
-        { id: 'art6', name: 'นางสาวณัฐกานต์ เดชบุญ', image: 'natthakan2.jpg' },
-        { id: 'art7', name: 'นายวัชราภรณ์ เจริญกุล', image: 'watcharaphon.jpg' },
-        { id: 'art8', name: 'นายณัชศิต ราชวงศ์', image: 'natchasit.jpg' }
+        { id: 'art1', name: 'นายตฤณ คงอยู่สุข', image: 'natthakan.jpg' },
+        { id: 'art2', name: 'นายพลวัชร สำเรียนรัมย์', image: 'wanlop.jpg' },
+        { id: 'art3', name: 'นายปณิธิ คุ้มทรัพย์', image: 'thaworada.jpg' },
+        { id: 'art4', name: 'นางสาวดาวรุ่ง เย็นใส', image: 'chiwarat.jpg' },
+        { id: 'art5', name: 'นายไพศาล คำหอม', image: 'phanlop.jpg' }
     ],
     guidance: [
-        { id: 'gui1', name: 'นางสาวสุวรรณา ขวัญแก้ว', image: 'suwanna.jpg' },
-        { id: 'gui2', name: 'นางสาวณัชฏ์ฑิฌาวดี พรหมพรรณ', image: 'natchatichawadee.jpg' }
+        { id: 'gui1', name: 'นางกันยนา สุรชิต', image: 'suwanna.jpg' },
+        { id: 'gui2', name: 'นางลักขณา โพธิ์ทองโชติกุล', image: 'natchatichawadee.jpg' },
+        { id: 'gui2', name: 'นางสาวประภาภรณ์ รุ่งเรือง', image: 'natchatichawadee.jpg' }
     ]
 };
 
