@@ -4,23 +4,17 @@ const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbye0lPT3J6Clg9N6aQCl
 // --- แก้ไข PATH รูปภาพทั้งหมดให้เหลือเพียงชื่อไฟล์ ---
 const teachersData = {
     math: [
-        { id: 'math1', name: 'นางสาวพรวิภา สมบุญ', image: 'phonwipha.jpg' },
-        { id: 'math2', name: 'นางสาวกนกวรรณ มีชัยผาสุข', image: 'kanokwan.jpg' },
-        { id: 'math3', name: 'นางสายสมร เงินเหลี่ยม', image: 'saisamon.jpg' },
-        { id: 'math4', name: 'นางสาวสุภัตรา ทรัพย์อุปการ', image: 'supattra2.jpg' },
-        { id: 'math5', name: 'นายสุริโย เหมือนวดี', image: 'suriyo.jpg' },
-        { id: 'math6', name: 'นางสาวนัทธมน แดงแท้', image: 'natthamon.jpg' },
-        { id: 'math7', name: 'นางสาวอิศราภรณ์ พูลสวัสดิ์', image: 'itsaraphon.jpg' },
-        { id: 'math8', name: 'นางสาวอรญา เติมโพก', image: 'oraya.jpg' },
-        { id: 'math9', name: 'นางสาวศุภมาศ ชาที', image: 'supamat.jpg' },
-        { id: 'math10', name: 'นางสาวอัมพิกา ศิริพงษ์', image: 'ampika.jpg' },
-        { id: 'math11', name: 'นางสาวปนัดดา จันทร์วัฒน์', image: 'panadda.jpg' },
-        { id: 'math12', name: 'นางสาวนพรัตน์ อรุณสุวรรณ', image: 'nopparat.jpg' },
-        { id: 'math13', name: 'นางสาวอวรรษดา สายแก้ว', image: 'awassada.jpg' },
-        { id: 'math14', name: 'นายเกษมสันต์ จากโพชน์', image: 'kasemsan.jpg' },
-        { id: 'math15', name: 'ว่าที่ร้อยตรีเศรษฐา เชื่อมมณี', image: 'settha.jpg' },
-        { id: 'math16', name: 'นางสาวนภัสสร สว่างศรี', image: 'naphatson.jpg' },
-        { id: 'math17', name: 'นางสาวปาริฉัตร ทองช้อย', image: 'parichat.jpg' }
+        { id: 'math1', name: 'นางสาวปณิชา  น้ำแก้ว', image: 'phonwipha.jpg' },
+        { id: 'math2', name: 'นางสุมีนา  ทับเนียม', image: 'kanokwan.jpg' },
+        { id: 'math3', name: 'นางสาวสุดา  สมอแก้ว', image: 'saisamon.jpg' },
+        { id: 'math4', name: 'นางสาวบงกชกุล  วงษ์สีทอง', image: 'supattra2.jpg' },
+        { id: 'math5', name: 'นายทรงเกียรติ มณีโชติชุติมา', image: 'suriyo.jpg' },
+        { id: 'math6', name: 'นางสาวกองกาญจน์ ทิพย์จันทร์', image: 'natthamon.jpg' },
+        { id: 'math7', name: 'นางสาวเพ็ญพิชชา  วรศักตยานันต์', image: 'itsaraphon.jpg' },
+        { id: 'math8', name: 'นางสาวพิศุทธิ์  แย้มบุตร', image: 'oraya.jpg' },
+        { id: 'math9', name: 'นางสาวศิริพร  สุขเกษม', image: 'supamat.jpg' },
+        { id: 'math10', name: 'นางสาวธีร์วรา ทับชุม', image: 'ampika.jpg' },
+        { id: 'math11', name: 'นางสาวณัฎฐริณี ช่วยคง', image: 'panadda.jpg' }
     ],
     science: [
         { id: 'sci1', name: 'นางจันทร์เพ็ญ  ศรีภุมมา', image: 'rotsukon.jpg' },
@@ -42,7 +36,7 @@ const teachersData = {
         { id: 'sci17', name: 'นายพงศ์พัทธ์  เจริญลาภลอย', image: 'thanyathon.jpg' },
         { id: 'sci18', name: 'นายภควรรษ  รัตนภานพ', image: 'butsaraphon.jpg' },
         { id: 'sci19', name: 'นายอัษฎา สังขะจาย', image: 'benjawan.jpg' },
-        { id: 'sci20', name: 'นางสาวศศิธร ตรีพิมล', image: 'chakrit.jpg' },
+        { id: 'sci20', name: 'นางสาวศศิธร ตรีพิมล', image: 'chakrit.jpg' }
     ],
     thai: [
         { id: 'thai1', name: 'นายจักรกฤษณ์ บัวลอย', image: 'jakkrit.jpg' },
