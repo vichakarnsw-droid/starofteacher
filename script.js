@@ -69,7 +69,7 @@ const teachersData = {
         { id: 'foreign16', name: 'Ms. Emily  Mirembe', image: 'siriamphai.jpg' },
         { id: 'foreign17', name: 'Mr. Rusty Nino Felipe Mercado', image: 'nalinphat.jpg' },
         { id: 'foreign18', name: 'Ms. Patricia Maxine Dazo Vergara', image: 'chittima.jpg' },
-        { id: 'foreign19', name: 'ครูจีน', image: 'nitchnipha.jpg' }
+        { id: 'foreign19', name: 'Ceng Jia qi', image: 'nitchnipha.jpg' }
     ],
     social: [
         { id: 'soc1', name: 'นายธนากร ทองศิริ', image: 'thanakorn2.jpg' },
