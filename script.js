@@ -1,5 +1,5 @@
 // Database of teachers (ใช้รูปภาพจริง)
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwBF_-mHdePzrLEslrG3G1C-AhC4BmWq4H5FwtSCFrZSabq01--4W7uWnjTBFXrza4e/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbye0lPT3J6Clg9N6aQCl-S2z68z4qgM-4cRp7yrH6YhpHewR2L3wgHdkaxFhhDqcn67hg/exec";
 
 // --- แก้ไข PATH รูปภาพทั้งหมดให้เหลือเพียงชื่อไฟล์ ---
 const teachersData = {
