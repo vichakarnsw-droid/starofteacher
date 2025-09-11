@@ -23,9 +23,9 @@ const teachersData = {
         { id: 'math17', name: 'นางสาวปาริฉัตร ทองช้อย', image: 'parichat.jpg' }
     ],
     science: [
-        { id: 'sci1', name: 'นางสาวรสสุคนธ์ สุนทรโอวาท', image: 'rotsukon.jpg' },
-        { id: 'sci2', name: 'นายกิจจา กิจหงวน', image: 'kitcha.jpg' },
-        { id: 'sci3', name: 'นางนภาพร ชัยเชื้อ', image: 'naphaphon.jpg' },
+        { id: 'sci1', name: 'นางจันทร์เพ็ญ  ศรีภุมมา', image: 'rotsukon.jpg' },
+        { id: 'sci2', name: 'นายณัฐวุฒิ  วรรณโชติ', image: 'kitcha.jpg' },
+        { id: 'sci3', name: 'นางสาวภาณุมาศ  นักษัตรมณฑล', image: 'naphaphon.jpg' },
         { id: 'sci4', name: 'นางสาวภรณี คีรีคุ้ม', image: 'phoranee.jpg' },
         { id: 'sci5', name: 'นายกิตติธร เดชเกิด', image: 'kittithon.jpg' },
         { id: 'sci6', name: 'นายจักรพงษ์ กิตติพงศ์ธนกิจ', image: 'chakkraphong.jpg' },
