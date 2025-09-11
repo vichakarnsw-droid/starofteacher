@@ -31,7 +31,7 @@ const teachersData = {
         { id: 'sci6', name: 'นางสาวเรณู  อรุณประสิทธิชัย', image: 'chakkraphong.jpg' },
         { id: 'sci7', name: 'นางสาวสุทธิกานต์  เหรียญทอง', image: 'chanakan.jpg' },
         { id: 'sci8', name: 'นางสาวจิณณ์ณณัช  ธาราจิรเศรษฐ์', image: 'nawaphon.jpg' },
-        { id: 'sci9', name: 'นางณัฐนรี  แขวงโสภา', image: 'kitti.jpg' },
+        { id: 'sci9', name: 'นางณัฐนรี  แขวงโสภา', image: 'wan.png' },
         { id: 'sci10', name: 'นางสาวระพีพัชร  อินทรโชติ', image: 'sasithon.jpg' },
         { id: 'sci11', name: 'นางสาวลักษิกา  ผลพิมาย', image: 'wanna.jpg' },
         { id: 'sci12', name: 'นางสาวธนาภรณ์  เจริญผล', image: 'pharawee.jpg' },
