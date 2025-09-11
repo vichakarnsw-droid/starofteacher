@@ -32,7 +32,7 @@ body {
 }
 
 .vote-option.selected {
-    background-color: #4ade80;
+    background-color: #4A53EF;
     color: white;
     border-color: #4A53EF;
 }
