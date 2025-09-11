@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สรุปผลโหวต</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app" class="min-h-screen">
+        <header class="bg-green-600 text-white shadow-lg">
+            <div class="container mx-auto py-6 px-4">
+                 <h1 class="text-3xl md:text-4xl font-bold text-center">สรุปผลโหวตครูในดวงใจ</h1>
+            </div>
+        </header>
+        <main class="container mx-auto px-4 py-8">
+            <div id="loading" class="text-center">
+                <p class="text-xl text-green-700">กำลังโหลดข้อมูลสรุปผล...</p>
+            </div>
+            <div id="main-content" class="hidden">
+                <h2 class="text-2xl font-semibold text-green-800 mb-4 text-center">เลือกกลุ่มสาระเพื่อดูผลสรุป</h2>
+                <div id="subject-selector" class="flex flex-wrap gap-2 mb-8 justify-center"></div>
+                <h3 id="summary-subject-title" class="text-2xl font-bold text-green-800 mb-6 text-center"></h3>
+                <div id="summary-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+            </div>
+        </main>
+    </div>
+
+<script>
+    // ===================================================================
+    //  สำคัญ! แก้ไข URL ตรงนี้เป็น Web App URL เดียวกับไฟล์ script.js
+    // ===================================================================
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwBF_-mHdePzrLEslrG3G1C-AhC4BmWq4H5FwtSCFrZSabq01--4W7uWnjTBFXrza4e/exec";
+    
+    // ===================================================================
+    //  สำคัญ! ข้อมูลส่วนนี้ต้องถูกคัดลอกมาจากไฟล์ script.js
+    // ===================================================================
+    const teachersData = {
+        math: [
+            { id: 'math1', name: 'นางสาวพรวิภา สมบุญ', image: 'images/math/phonwipha.jpg' },
+            { id: 'math2', name: 'นางสาวกนกวรรณ มีชัยผาสุข', image: 'images/math/kanokwan.jpg' },
+            { id: 'math3', name: 'นางสายสมร เงินเหลี่ยม', image: 'images/math/saisamon.jpg' },
+            { id: 'math4', name: 'นางสาวสุภัตรา ทรัพย์อุปการ', image: 'images/math/supattra.jpg' },
+            { id: 'math5', name: 'นายสุริโย เหมือนวดี', image: 'images/math/suriyo.jpg' },
+            { id: 'math6', name: 'นางสาวนัทธมน แดงแท้', image: 'images/math/natthamon.jpg' },
+            { id: 'math7', name: 'นางสาวอิศราภรณ์ พูลสวัสดิ์', image: 'images/math/itsaraphon.jpg' },
+            { id: 'math8', name: 'นางสาวอรญา เติมโพก', image: 'images/math/oraya.jpg' },
+            { id: 'math9', name: 'นางสาวศุภมาศ ชาที', image: 'images/math/supamat.jpg' },
+            { id: 'math10', name: 'นางสาวอัมพิกา ศิริพงษ์', image: 'images/math/ampika.jpg' },
+            { id: 'math11', name: 'นางสาวปนัดดา จันทร์วัฒน์', image: 'images/math/panadda.jpg' },
+            { id: 'math12', name: 'นางสาวนพรัตน์ อรุณสุวรรณ', image: 'images/math/nopparat.jpg' },
+            { id: 'math13', name: 'นางสาวอวรรษดา สายแก้ว', image: 'images/math/awassada.jpg' },
+            { id: 'math14', name: 'นายเกษมสันต์ จากโพชน์', image: 'images/math/kasemsan.jpg' },
+            { id: 'math15', name: 'ว่าที่ร้อยตรี เศรษฐา เชื่อมมณี', image: 'images/math/settha.jpg' },
+            { id: 'math16', name: 'นางสาวนภัสสร สว่างศรี', image: 'images/math/naphatson.jpg' },
+            { id: 'math17', name: 'นางสาวปาริฉัตร ทองช้อย', image: 'images/math/parichat.jpg' }
+        ],
+        science: [
+            { id: 'sci1', name: 'นางสาวรสสุคนธ์ สุนทรโอวาท', image: 'images/sci/rotsukon.jpg' },
+            { id: 'sci2', name: 'นายกิจจา กิจหงวน', image: 'images/sci/kitcha.jpg' },
+            { id: 'sci3', name: 'นางนภาพร ชัยเชื้อ', image: 'images/sci/naphaphon.jpg' },
+            { id: 'sci4', name: 'นางสาวภรณี คีรีคุ้ม', image: 'images/sci/phoranee.jpg' },
+            { id: 'sci5', name: 'นายกิตติธร เดชเกิด', image: 'images/sci/kittithon.jpg' },
+            { id: 'sci6', name: 'นายจักรพงษ์ กิตติพงศ์ธนกิจ', image: 'images/sci/chakkraphong.jpg' },
+            { id: 'sci7', name: 'นางสาวชนากานต์ สายนาค', image: 'images/sci/chanakan.jpg' },
+            { id: 'sci8', name: 'นางสาวนวพร วัฒนศฤงคาร', image: 'images/sci/nawaphon.jpg' },
+            { id: 'sci9', name: 'นายกิตติ พงศ์พานิช', image: 'images/sci/kitti.jpg' },
+            { id: 'sci10', name: 'นางสาวศศิธร จีนสินธุ์', image: 'images/sci/sasithon.jpg' },
+            { id: 'sci11', name: 'นางสาววรรณา ประสงค์ดี', image: 'images/sci/wanna.jpg' },
+            { id: 'sci12', name: 'นายพารวีร์ เลือดแดง', image: 'images/sci/pharawee.jpg' },
+            { id: 'sci13', name: 'นางสาวธัญสิริ โพธิพิบูลย์', image: 'images/sci/thansiri.jpg' },
+            { id: 'sci14', name: 'นางสาวสิริมณฑ์ พรหมสวัสดิ์', image: 'images/sci/sirimon.jpg' },
+            { id: 'sci15', name: 'นายศุกล นฤมลธนภัทร', image: 'images/sci/sukon.jpg' },
+            { id: 'sci16', name: 'นายธนวิทย์ เชื้อนุช', image: 'images/sci/thanawit.jpg' },
+            { id: 'sci17', name: 'นางสาวธันยธรณ์ ชุมแก้ว', image: 'images/sci/thanyathon.jpg' },
+            { id: 'sci18', name: 'นางบุศราพร อรรถวุฒิกุล', image: 'images/sci/butsaraphon.jpg' },
+            { id: 'sci19', name: 'นางสาวเบญจวรรณ บัวบังใบ', image: 'images/sci/benjawan.jpg' },
+            { id: 'sci20', name: 'นายชาคริต พรหมกรุง', image: 'images/sci/chakrit.jpg' },
+            { id: 'sci21', name: 'นางสาวไอลดา กลิ่นสมหวัง', image: 'images/sci/ailada.jpg' },
+            { id: 'sci22', name: 'นางสาวปาริชาติ วีรมนตรังษี', image: 'images/sci/parichat.jpg' },
+            { id: 'sci23', name: 'นางสาวศิริรัตน์ ดวงแก้ว', image: 'images/sci/sirirat.jpg' },
+            { id: 'sci24', name: 'นางสาวธัญญารัตน์ ทนทาน', image: 'images/sci/thanyarat.jpg' },
+            { id: 'sci25', name: 'ว่าที่ร้อยตรีอานนท์ เมืองแก้ว', image: 'images/sci/anon.jpg' },
+            { id: 'sci26', name: 'นางสาวกวีวรรณ เชื้อบ้านเกาะ', image: 'images/sci/kaweewan.jpg' },
+            { id: 'sci27', name: 'นางสาวอรทัย รักคำ', image: 'images/sci/onthai.jpg' },
+            { id: 'sci28', name: 'นางสาวเพ็ญนภา จันนาค', image: 'images/sci/phennapha.jpg' },
+            { id: 'sci29', name: 'นางสาวเกวลิน ยืนนาน', image: 'images/sci/kewalin.jpg' },
+            { id: 'sci30', name: 'นายอนิรุทธ์ ดอนสะคู', image: 'images/sci/anirut.jpg' }
+        ],
+        thai: [
+            { id: 'thai1', name: 'นายจักรกฤษณ์ บัวลอย', image: 'images/thai/jakkrit.jpg' },
+            { id: 'thai2', name: 'นางกรวรรณ คล่องยุทธ์', image: 'images/thai/kornwan.jpg' },
+            { id: 'thai3', name: 'นางสาวจรรยงค์ บุญซัน', image: 'images/thai/chanyong.jpg' },
+            { id: 'thai4', name: 'นางสาวบำเพ็ญ ขาวสง่า', image: 'images/thai/bampen.jpg' },
+            { id: 'thai5', name: 'นางชุติมา อังกุลดี', image: 'images/thai/chutima.jpg' },
+            { id: 'thai6', name: 'นายรัตนศักดิ์ ก้อนเพชร', image: 'images/thai/rattanasak.jpg' },
+            { id: 'thai7', name: 'นายธนากร ชมเชย', image: 'images/thai/thanakorn.jpg' },
+            { id: 'thai8', name: 'นางสาวณัฏฐนิช เยี่ยงมานิต', image: 'images/thai/natthanit.jpg' },
+            { id: 'thai9', name: 'นางสาวทิพย์วัลย์ ทองดี', image: 'images/thai/thipphawan.jpg' },
+            { id: 'thai10', name: 'นางสาววิราชิน ขันติสิทธิ์', image: 'images/thai/wirachin.jpg' },
+            { id: 'thai11', name: 'นางสาวสุจิตรา กลิ่นสว่าง', image: 'images/thai/sujitra.jpg' },
+            { id: 'thai12', name: 'นายวงศ์วรัณ ช้างพลาย', image: 'images/thai/wongwaran.jpg' },
+            { id: 'thai13', name: 'นายอธิวัฒน์ พูลเพิ่ม', image: 'images/thai/athiwat.jpg' }
+        ],
+        foreign: [
+            { id: 'foreign1', name: 'นางสาวจิราภรณ์ เหมือนอ่วม', image: 'images/eng/chiraphon.jpg' },
+            { id: 'foreign2', name: 'นางสาวนวรัตน์ สังขฤทธิ์', image: 'images/eng/nawarat.jpg' },
+            { id: 'foreign3', name: 'นางสาวธมลวรรณ เคล้าคลึง', image: 'images/eng/thamonwan.jpg' },
+            { id: 'foreign4', name: 'นางสาวศิรดา อ่อนทรัพย์', image: 'images/eng/sirada.jpg' },
+            { id: 'foreign5', name: 'นางสาวดวงกมล ตรีหัตถ์', image: 'images/eng/duangkamon.jpg' },
+            { id: 'foreign6', name: 'นางสาวอรวรรณ มาช่วย', image: 'images/eng/onwan.jpg' },
+            { id: 'foreign7', name: 'นายวรวัตต์ มานะแท้', image: 'images/eng/worawat.jpg' },
+            { id: 'foreign8', name: 'นางสาวรัตนา มีประวัติ', image: 'images/eng/rattana.jpg' },
+            { id: 'foreign9', name: 'นางสาวสุพัตรา เพชรใหญ่', image: 'images/eng/supattra.jpg' },
+            { id: 'foreign10', name: 'นางสาวิณี ปัทมเสถียรชัย', image: 'images/eng/sawinee.jpg' },
+            { id: 'foreign11', name: 'นายปฏิภาณ ปู่พันธ์', image: 'images/eng/patiphan.jpg' },
+            { id: 'foreign12', name: 'นางสาวภัทริยา ปานเชียงวงษ์', image: 'images/eng/phattriya.jpg' },
+            { id: 'foreign13', name: 'นางสาววทิพร เครือพันธุ์', image: 'images/eng/wathiphon.jpg' },
+            { id: 'foreign14', name: 'นางสาวอรภัทร เวชชูศักดิ์ชัย', image: 'images/eng/onphat.jpg' },
+            { id: 'foreign15', name: 'นางสาวปณิตา เทวบัญชาประเสริฐ', image: 'images/eng/panita.jpg' },
+            { id: 'foreign16', name: 'นางสาวศิริอำไพ สุธีเจริญกุล', image: 'images/eng/siriamphai.jpg' },
+            { id: 'foreign17', name: 'นางสาวนลินภัสร์ จิตพิบูลย์', image: 'images/eng/nalinphat.jpg' },
+            { id: 'foreign18', name: 'นางสาวจิตติมา แวววับศรี', image: 'images/eng/chittima.jpg' },
+            { id: 'foreign19', name: 'นางสาวนิชนิภา ขนอม', image: 'images/eng/nitchnipha.jpg' },
+            { id: 'foreign20', name: 'นายพงศธร คงดี', image: 'images/eng/phongsathon.jpg' },
+            { id: 'foreign21', name: 'นางสาวสุนิษา เผือกสวัสดิ์', image: 'images/eng/sunisa.jpg' }
+        ],
+        social: [
+            { id: 'soc1', name: 'นายธนากร ทองศิริ', image: 'images/soc/thanakorn.jpg' },
+            { id: 'soc2', name: 'นางสาวสิรีกร ทับทิมทอง', image: 'images/soc/sireekorn.jpg' },
+            { id: 'soc3', name: 'นางสาวไอรินทร์ โกณฑา', image: 'images/soc/airin.jpg' },
+            { id: 'soc4', name: 'นางสาวประภัสสร สิทธิศักดิ์', image: 'images/soc/praphatson.jpg' },
+            { id: 'soc5', name: 'นางสาวพรนิภา เวียงวิเศษ', image: 'images/soc/phonnipha.jpg' },
+            { id: 'soc6', name: 'นางทัสณียา แบบสังข์', image: 'images/soc/thatsaneeya.jpg' },
+            { id: 'soc7', name: 'นางสาวสุภานัน เบญจมังคลารักษ์', image: 'images/soc/suphanan.jpg' },
+            { id: 'soc8', name: 'นางสาวพัทธนันท์ ชนะภัย', image: 'images/soc/phatthanan.jpg' },
+            { id: 'soc9', name: 'นางสาวสุชาดา ปลอยปลา', image: 'images/soc/suchada.jpg' },
+            { id: 'soc10', name: 'นางสาวฌัชฌา พลีไพล', image: 'images/soc/chatcha.jpg' },
+            { id: 'soc11', name: 'นางสาวศุภัทศจี โตใหญ่', image: 'images/soc/suphatsajee.jpg' },
+            { id: 'soc12', name: 'นางสาวกรกนก บุญเดชา', image: 'images/soc/kornkanok.jpg' },
+            { id: 'soc13', name: 'นางสาวสิริกัญญา อัมพสุวรรณ', image: 'images/soc/sirikanya.jpg' },
+            { id: 'soc14', name: 'นางสาวประภาพรรณ ประกอบบุญ', image: 'images/soc/praphaphan.jpg' },
+            { id: 'soc15', name: 'นายสหรัฐ แจ่มกระจ่าง', image: 'images/soc/saharat.jpg' }
+        ],
+        pe: [
+            { id: 'pe1', name: 'นายธีรวุฒิ แกละบังทอง', image: 'images/pe/theerawut.jpg' },
+            { id: 'pe2', name: 'นายชัชวาล พูลสวัสดิ์', image: 'images/pe/chatchawan.jpg' },
+            { id: 'pe3', name: 'นายอนุพงศ์ สุริฉาย', image: 'images/pe/anuphong.jpg' },
+            { id: 'pe4', name: 'นางสาวเอมวิกา เพชรทอง', image: 'images/pe/amika.jpg' },
+            { id: 'pe5', name: 'นายจริพจน์ คงทัพ', image: 'images/pe/charipot.jpg' },
+            { id: 'pe6', name: 'นางสาวทยากร งามน้อย', image: 'images/pe/thayakorn.jpg' },
+            { id: 'pe7', name: 'นายกฤษณะ อินทโชติ', image: 'images/pe/kritsana.jpg' }
+        ],
+        career: [
+            { id: 'car1', name: 'นางสาวจีรวรรณ สุขผล', image: 'images/car/jeerawan.jpg' },
+            { id: 'car2', name: 'นางสาวสุนารี ก๋าแก่น', image: 'images/car/sunaree.jpg' },
+            { id: 'car3', name: 'นางสาวปรวรรธ์น สอนเพ็ง', image: 'images/car/porawan.jpg' },
+            { id: 'car4', name: 'นายไพบูลย์ รอดทิม', image: 'images/car/paiboon.jpg' },
+            { id: 'car5', name: 'นางสาวปริณา คุณสุทธิ์', image: 'images/car/parina.jpg' }
+        ],
+        art: [
+            { id: 'art1', name: 'นางสาวนัฐกานต์ หุ่นงาม', image: 'images/art/natthakan.jpg' },
+            { id: 'art2', name: 'นายวัลลภ แก้วกำเนิด', image: 'images/art/wanlop.jpg' },
+            { id: 'art3', name: 'นางสาวฐาวรดา วิเชียรฉาย', image: 'images/art/thaworada.jpg' },
+            { id: 'art4', name: 'นางชีวารัตน์ ยอดยิ่ง', image: 'images/art/chiwarat.jpg' },
+            { id: 'art5', name: 'นายพัลลภ อินทรสาร', image: 'images/art/phanlop.jpg' },
+            { id: 'art6', name: 'นางสาวณัฐกานต์ เดชบุญ', image: 'images/art/natthakan2.jpg' },
+            { id: 'art7', name: 'นายวัชราภรณ์ เจริญกุล', image: 'images/art/watcharaphon.jpg' },
+            { id: 'art8', name: 'นายณัชศิต ราชวงศ์', image: 'images/art/natchasit.jpg' }
+        ],
+        guidance: [
+            { id: 'gui1', name: 'นางสาวสุวรรณา ขวัญแก้ว', image: 'images/gui/suwanna.jpg' },
+            { id: 'gui2', name: 'นางสาวณัชฏ์ฑิฌาวดี พรหมพรรณ', image: 'images/gui/natchatichawadee.jpg' }
+        ]
+    };
+    const subjectNames = {
+        math: 'คณิตศาสตร์',
+        science: 'วิทยาศาสตร์และเทคโนโลยี',
+        thai: 'ภาษาไทย',
+        foreign: 'ภาษาต่างประเทศ',
+        social: 'สังคมศึกษา',
+        pe: 'สุขศึกษาและพลศึกษา',
+        career: 'การงานอาชีพ',
+        art: 'ศิลปะ',
+        guidance: 'แนะแนว'
+    };
+    const voteOptions = {
+        1: 'สายคอนเทนต์',
+        2: 'สายข้อสอบโหด',
+        3: 'สายสอนเกินคาบ',
+        4: 'สายบันเทิง',
+        5: 'สายเจ้าระเบียบ',
+        6: 'สายเข้าใจนักเรียน',
+        7: 'สายตั้งใจสอน',
+        8: 'สายใจดีเมตตา',
+        9: 'สายแฟชั่น'
+    };
+
+    // --- โค้ดส่วนที่เหลือสำหรับดึงข้อมูลและแสดงผล ---
+    const loadingDiv = document.getElementById('loading');
+    const mainContentDiv = document.getElementById('main-content');
+    const subjectSelector = document.getElementById('subject-selector');
+    const summaryContainer = document.getElementById('summary-container');
+    const summarySubjectTitle = document.getElementById('summary-subject-title');
+
+    const chartColors = [
+        '#4ade80', '#facc15', '#fb923c', '#f87171', '#60a5fa',
+        '#c084fc', '#f472b6', '#34d399', '#a78bfa'
+    ];
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // เพิ่มการตรวจสอบค่าว่างของ teachersData
+        if (!teachersData || Object.keys(teachersData).length === 0) {
+            loadingDiv.innerHTML = `<p class="text-xl text-red-600">เกิดข้อผิดพลาด: ไม่พบข้อมูล teachersData ในสคริปต์ กรุณาคัดลอกข้อมูลจาก script.js มาวางให้ครบถ้วน</p>`;
+            return;
+        }
+
+        fetch(SCRIPT_URL)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Network response was not ok: ${response.statusText}`);
+                }
+                return response.json();
+            })
+            .then(summaryData => {
+                loadingDiv.classList.add('hidden');
+                mainContentDiv.classList.remove('hidden');
+                
+                Object.keys(teachersData).forEach(subjectKey => {
+                    const button = document.createElement('button');
+                    button.textContent = subjectNames[subjectKey];
+                    button.className = 'btn-subject bg-white border-2 border-green-500 rounded-lg py-2 px-4 text-green-700 font-medium shadow-md hover:bg-green-50';
+                    button.onclick = () => showSummary(subjectKey, summaryData);
+                    subjectSelector.appendChild(button);
+                });
+            })
+            .catch(error => {
+                console.error('Fetch Error:', error);
+                loadingDiv.innerHTML = `<p class="text-xl text-red-600">เกิดข้อผิดพลาดในการโหลดข้อมูล: ${error.message}<br><span class="text-base text-gray-600">กรุณาตรวจสอบ URL, การตั้งค่า Deploy (ต้องเป็น Anyone), และการเชื่อมต่ออินเทอร์เน็ต</span></p>`;
+            });
+    });
+
+    function showSummary(subjectKey, summaryData) {
+    summaryContainer.innerHTML = '';
+    summarySubjectTitle.textContent = `ผลสรุปกลุ่มสาระ: ${subjectNames[subjectKey]}`;
+    
+    const subjectTeachers = teachersData[subjectKey];
+    const subjectSummary = summaryData[subjectNames[subjectKey]] || {};
+
+    if (!subjectTeachers || subjectTeachers.length === 0) {
+        summaryContainer.innerHTML = '<p class="text-center col-span-full">ไม่พบข้อมูลคุณครูในกลุ่มสาระนี้</p>';
+        return;
+    }
+
+    subjectTeachers.forEach(teacher => {
+        const teacherId = teacher.id;
+        const teacherResult = subjectSummary[teacherId] || { name: teacher.name, votes: {} };
+        
+        const card = document.createElement('div');
+        card.className = 'bg-white p-4 sm:p-6 rounded-xl shadow-lg flex flex-col';
+        
+        // ==========================================================
+        //  !!! ตรวจสอบว่าบรรทัดนี้เริ่มต้นและจบด้วย Backtick (`) !!!
+        // ==========================================================
+        const infoHtml = `
+            <div class="flex items-center mb-4">
+                <img src="${teacher.image}" alt="${teacher.name}" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full mr-4 object-cover border-2 border-green-200">
+                <div class="flex-grow">
+                    <h3 class="text-lg sm:text-xl font-bold text-green-900">${teacher.name}</h3>
+                    <p id="top-vote-${teacherId}" class="text-green-600 font-semibold"></p>
+                </div>
+            </div>`;
+        
+        const chartHtml = `<div class="flex-grow flex items-center justify-center"><canvas id="chart-${teacherId}"></canvas></div>`;
+        card.innerHTML = infoHtml + chartHtml;
+        summaryContainer.appendChild(card);
+        
+        const voteCounts = teacherResult.votes;
+        const labels = Object.values(voteOptions);
+        const data = Object.keys(voteOptions).map(key => voteCounts[key] || 0);
+
+        let maxVotes = 0;
+        let topVoteIndex = -1;
+        let totalVotes = 0;
+        data.forEach((count, index) => {
+            totalVotes += count;
+            if (count > maxVotes) {
+                maxVotes = count;
+                topVoteIndex = index;
+            }
+        });
+        
+        const topVoteEl = document.getElementById(`top-vote-${teacherId}`);
+        if (topVoteIndex !== -1) {
+            topVoteEl.textContent = `สายเด่น: ${voteOptions[topVoteIndex + 1]}`;
+        } else {
+             topVoteEl.textContent = 'ยังไม่มีผลโหวต';
+        }
+
+        if (totalVotes > 0) {
+            new Chart(document.getElementById(`chart-${teacherId}`), {
+                type: 'pie',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'ผลโหวต',
+                        data: data,
+                        backgroundColor: chartColors,
+                        borderColor: '#ffffff',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: false 
+                        }
+                    }
+                }
+            });
+        } else {
+             document.getElementById(`chart-${teacherId}`).outerHTML = '<p class="text-center text-gray-500 flex-grow flex items-center justify-center">ยังไม่มีข้อมูลกราฟ</p>';
+        }
+    });
+}
+
+        subjectTeachers.forEach(teacher => {
+            const teacherId = teacher.id;
+            const teacherResult = subjectSummary[teacherId] || { name: teacher.name, votes: {} };
+            
+            const card = document.createElement('div');
+            card.className = 'bg-white p-4 sm:p-6 rounded-xl shadow-lg flex flex-col';
+            
+            const infoHtml = `
+                <div class="flex items-center mb-4">
+                    <img src="<span class="math-inline">\{teacher\.image\}" alt\="</span>{teacher.name}" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full mr-4 object-cover border-2 border-green-200">
+                    <div class="flex-grow">
+                        <h3 class="text-lg sm:text-xl font-bold text-green-900"><span class="math-inline">\{teacher\.name\}</h3\>
+                        <p id\="top\-vote\-</span>{teacherId}" class="text-green-600 font-semibold"></p>
+                    </div>
+                </div>`;
+            
+            const chartHtml = `<div class="flex-grow flex items-center justify-center"><canvas id="chart-${teacherId}"></canvas></div>`;
+            card.innerHTML = infoHtml + chartHtml;
+            summaryContainer.appendChild(card);
+            
+            const voteCounts = teacherResult.votes;
+            const labels = Object.values(voteOptions);
+            const data = Object.keys(voteOptions).map(key => voteCounts[key] || 0);
+
+            let maxVotes = 0;
+            let topVoteIndex = -1;
+            let totalVotes = 0;
+            data.forEach((count, index) => {
+                totalVotes += count;
+                if (count > maxVotes) {
+                    maxVotes = count;
+                    topVoteIndex = index;
+                }
+            });
+            
+            const topVoteEl = document.getElementById(`top-vote-${teacherId}`);
+            if (topVoteIndex !== -1) {
+                topVoteEl.textContent = `สายเด่น: ${voteOptions[topVoteIndex + 1]}`;
+            } else {
+                 topVoteEl.textContent = 'ยังไม่มีผลโหวต';
+            }
+
+            if (totalVotes > 0) {
+                new Chart(document.getElementById(`chart-${teacherId}`), {
+                    type: 'pie',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'ผลโหวต',
+                            data: data,
+                            backgroundColor: chartColors,
+                            borderColor: '#ffffff',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                display: false 
+                            }
+                        }
+                    }
+                });
+            } else {
+                 document.getElementById(`chart-${teacherId}`).outerHTML = '<p class="text-center text-gray-500 flex-grow flex items-center justify-center">ยังไม่มีข้อมูลกราฟ</p>';
+            }
+        });
+    
+    </script>
+</body>
+</html>
