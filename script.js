@@ -228,17 +228,17 @@ function showTeachers(subject) {
     teachersContainer.innerHTML = '';
     teachersData[subject].forEach(teacher => {
         const teacherCard = document.createElement('div');
-        teacherCard.className = 'teacher-card bg-white rounded-lg shadow-md overflow-hidden border-2 border-green-200 hover:border-green-400 cursor-pointer';
+        teacherCard.className = 'teacher-card bg-white rounded-lg shadow-md overflow-hidden border-2 border-blue-200 hover:border-blue-400 cursor-pointer';
         teacherCard.innerHTML = `
             <div class="p-6">
                 <div class="w-24 h-24 mx-auto rounded-full bg-gray-200 flex items-center justify-center mb-4 overflow-hidden">
                     <img src="${teacher.image}" alt="${teacher.name}" class="w-full h-full object-cover" loading="lazy">
                 </div>
-                <h3 class="text-xl font-semibold text-green-800 text-center">${teacher.name}</h3>
-                <p class="text-green-600 text-center">${subjectNames[subject]}</p>
+                <h3 class="text-xl font-semibold text-blue-800 text-center">${teacher.name}</h3>
+                <p class="text-blue-600 text-center">${subjectNames[subject]}</p>
             </div>
-            <div class="bg-green-50 p-4 text-center">
-                <span class="select-teacher bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-lg transition-all">
+            <div class="bg-blue-50 p-4 text-center">
+                <span class="select-teacher bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-all">
                     โหวตให้คนนี้
                 </span>
             </div>
