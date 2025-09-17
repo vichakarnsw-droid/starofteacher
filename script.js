@@ -36,7 +36,7 @@ const teachersData = {
         { id: 'sci17', name: 'นายพงศ์พัทธ์  เจริญลาภลอย', image: '79 pongpat.png' },
         { id: 'sci18', name: 'นายภควรรษ  รัตนภานพ', image: '68 pakkawat.png' },
         { id: 'sci19', name: 'นายอัษฎา สังขะจาย', image: '66 atsada.png' },
-        { id: 'sci20', name: 'นางสาวศศิธร ตรีพิมล', image: 'chakrit.jpg' }
+        { id: 'sci20', name: 'นางสาวศศิธร ตรีพิมล', image: '89 sasithon.png' }
     ],
     thai: [
         { id: 'thai1', name: 'นางสาวสุชิรา แสงทองอร่าม', image: '2. suchira.png' },
@@ -63,13 +63,13 @@ const teachersData = {
         { id: 'foreign10', name: 'นางสาวพิราวรรณ ทองปาน', image: '39 pilawan.png' },
         { id: 'foreign11', name: 'นางสาวฉัตรรดา ประเสริฐศรี', image: '28 chatrada.png' },
         { id: 'foreign12', name: 'นางสาวปัทมาวดี นิลประดับ', image: '29 pathamawadee.png' },
-        { id: 'foreign13', name: 'นางสาวปพิชญา กลับประดิษฐ', image: 'wathiphon.jpg' },
+        { id: 'foreign13', name: 'นางสาวปพิชญา กลับประดิษฐ', image: '90 papichaya.png' },
         { id: 'foreign14', name: 'Ms. Nerissa  J.  Denilla', image: '86 Nerissa.png' },
         { id: 'foreign15', name: 'Mr. Steven J Walden', image: '83 Steven.png' },
         { id: 'foreign16', name: 'Ms. Emily  Mirembe', image: '85 Emily.png' },
         { id: 'foreign17', name: 'Mr. Rusty Nino Felipe Mercado', image: '87 Rusty.png' },
         { id: 'foreign18', name: 'Ms. Patricia Maxine Dazo Vergara', image: '84 Patricia.png' },
-        { id: 'foreign19', name: 'Ceng Jia qi', image: 'nitchnipha.jpg' }
+        { id: 'foreign19', name: 'Ceng Jia qi', image: '91 Ceng Jia qi.png' }
     ],
     social: [
         { id: 'soc1', name: 'นายชุมสิน กาญจนทอง', image: '5 chumsin.png' },
@@ -105,7 +105,7 @@ const teachersData = {
         { id: 'art2', name: 'นายพลวัชร สำเรียนรัมย์', image: '71 ponlawat.png' },
         { id: 'art3', name: 'นายปณิธิ คุ้มทรัพย์', image: '75 panithi.png' },
         { id: 'art4', name: 'นางสาวดาวรุ่ง เย็นใส', image: '74 dowrung.png' },
-        { id: 'art5', name: 'นายไพศาล คำหอม', image: 'phanlop.jpg' }
+        { id: 'art5', name: 'นายไพศาล คำหอม', image: '88 paisan.png' }
     ],
     guidance: [
         { id: 'gui1', name: 'นางกันยนา สุรชิต', image: '10 kanyana.png' },
