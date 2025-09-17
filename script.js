@@ -33,7 +33,7 @@ const teachersData = {
         { id: 'sci14', name: 'นายสุนทร อุ่นทวี', image: '42 sunthon.png' },
         { id: 'sci15', name: 'นายสุพจน์  วิจิตรเวชการ', image: '78 suphod.png' },
         { id: 'sci16', name: 'นายปกรณ์ บริบูรณ์ทรัพย์', image: '44 pakorn.png' },
-        { id: 'sci17', name: 'นายพงศ์พัทธ์  เจริญลาภลอย', image: 'thanyathon.jpg' },
+        { id: 'sci17', name: 'นายพงศ์พัทธ์  เจริญลาภลอย', image: '79 pongpat.png' },
         { id: 'sci18', name: 'นายภควรรษ  รัตนภานพ', image: '68 pakkawat.png' },
         { id: 'sci19', name: 'นายอัษฎา สังขะจาย', image: '66 atsada.png' },
         { id: 'sci20', name: 'นางสาวศศิธร ตรีพิมล', image: 'chakrit.jpg' }
@@ -84,9 +84,9 @@ const teachersData = {
         { id: 'soc10', name: 'นางสาวจรรยา สุขขา', image: '20 juanya.png' }
     ],
     pe: [
-        { id: 'pe1', name: 'นายนันทวัฒน์ พรมหาชัย', image: 'theerawut.jpg' },
+        { id: 'pe1', name: 'นายนันทวัฒน์ พรมหาชัย', image: '81 nanthawat.png' },
         { id: 'pe2', name: 'นางพรรณี ครุฑเสม', image: '12 pannee.png' },
-        { id: 'pe3', name: 'นายณัฐวุฒิ เชื้อปรางค์', image: 'anuphong.jpg' },
+        { id: 'pe3', name: 'นายณัฐวุฒิ เชื้อปรางค์', image: '80 natthawut.png' },
         { id: 'pe4', name: 'นายอาชาวิน บุญเกิด', image: '14 archawin.png' },
         { id: 'pe5', name: 'นายทวีเกียรติ วงแหวน', image: '21 thaweekieat.png' }
     ],
