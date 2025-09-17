@@ -39,7 +39,7 @@ const teachersData = {
         { id: 'sci20', name: 'นางสาวศศิธร ตรีพิมล', image: 'chakrit.jpg' }
     ],
     thai: [
-        { id: 'thai1', name: 'นางสาวสุชิรา แสงทองอร่าม', image: 'jakkrit.jpg' },
+        { id: 'thai1', name: 'นางสาวสุชิรา แสงทองอร่าม', image: '2. suchira.png' },
         { id: 'thai2', name: 'นางพรอุมา แก้วจิตต์', image: 'kornwan.jpg' },
         { id: 'thai3', name: 'นางสาวปรารถนา จันทร์ไทย', image: 'chanyong.jpg' },
         { id: 'thai4', name: 'นางณัฐิกา ปัตยุรักษ์', image: 'bampen.jpg' },
