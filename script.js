@@ -14,7 +14,7 @@ const teachersData = {
         { id: 'math8', name: 'นางสาวพิศุทธิ์  แย้มบุตร', image: 'oraya.jpg' },
         { id: 'math9', name: 'นางสาวศิริพร  สุขเกษม', image: 'supamat.jpg' },
         { id: 'math10', name: 'นางสาวธีร์วรา ทับชุม', image: '25 treewara.png' },
-        { id: 'math11', name: 'นางสาวณัฎฐริณี ช่วยคง', image: 'panadda.jpg' }
+        { id: 'math11', name: 'นางสาวณัฎฐริณี ช่วยคง', image: '27 nattharanee.png' }
     ],
     science: [
         { id: 'sci1', name: 'นางจันทร์เพ็ญ  ศรีภุมมา', image: 'rotsukon.jpg' },
@@ -57,12 +57,12 @@ const teachersData = {
         { id: 'foreign4', name: 'นางสาวทยากร ศักดิ์ศรีเท้า', image: 'sirada.jpg' },
         { id: 'foreign5', name: 'นางสาวอจิระวดี ไชยบุตร', image: 'duangkamon.jpg' },
         { id: 'foreign6', name: 'นางสาวธนิตา เผ่าพงศ์ษา', image: '24 thanitra.png' },
-        { id: 'foreign7', name: 'นายศิลปิน ทิพย์นพคุณ', image: 'worawat.jpg' },
-        { id: 'foreign8', name: 'นายธนวัฒน์ โพธิรัชต์', image: 'rattana.jpg' },
+        { id: 'foreign7', name: 'นายศิลปิน ทิพย์นพคุณ', image: '30 sinlapin.png' },
+        { id: 'foreign8', name: 'นายธนวัฒน์ โพธิรัชต์', image: '26 thanawat.png' },
         { id: 'foreign9', name: 'นางสาวสุจิรา สุวรรณนัง', image: '22 sujira.png' },
         { id: 'foreign10', name: 'นางสาวพิราวรรณ ทองปาน', image: 'sawinee.jpg' },
-        { id: 'foreign11', name: 'นางสาวฉัตรรดา ประเสริฐศรี', image: 'patiphan.jpg' },
-        { id: 'foreign12', name: 'นางสาวปัทมาวดี นิลประดับ', image: 'phattriya.jpg' },
+        { id: 'foreign11', name: 'นางสาวฉัตรรดา ประเสริฐศรี', image: '28 chatrada.png' },
+        { id: 'foreign12', name: 'นางสาวปัทมาวดี นิลประดับ', image: '29 pathamawadee.png' },
         { id: 'foreign13', name: 'นางสาวปพิชญา กลับประดิษฐ', image: 'wathiphon.jpg' },
         { id: 'foreign14', name: 'Ms. Nerissa  J.  Denilla', image: 'onphat.jpg' },
         { id: 'foreign15', name: 'Mr. Steven J Walden', image: 'panita.jpg' },
