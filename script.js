@@ -4,11 +4,11 @@ const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbye0lPT3J6Clg9N6aQCl
 // --- แก้ไข PATH รูปภาพทั้งหมดให้เหลือเพียงชื่อไฟล์ ---
 const teachersData = {
     math: [
-        { id: 'math1', name: 'นางสาวปณิชา  น้ำแก้ว', image: 'phonwipha.jpg' },
+        { id: 'math1', name: 'นางสาวปณิชา  น้ำแก้ว', image: '49 panicha.png' },
         { id: 'math2', name: 'นางสุมีนา  ทับเนียม', image: '16 sumeena.png' },
         { id: 'math3', name: 'นางสาวสุดา  สมอแก้ว', image: '31 suda.png' },
         { id: 'math4', name: 'นางสาวบงกชกุล  วงษ์สีทอง', image: '32 bongkodkul.png' },
-        { id: 'math5', name: 'นายทรงเกียรติ มณีโชติชุติมา', image: 'suriyo.jpg' },
+        { id: 'math5', name: 'นายทรงเกียรติ มณีโชติชุติมา', image: '51 shongkeirt.png' },
         { id: 'math6', name: 'นางสาวกองกาญจน์ ทิพย์จันทร์', image: '33 krongkarn.png' },
         { id: 'math7', name: 'นางสาวเพ็ญพิชชา  วรศักตยานันต์', image: '34 penphicha.png' },
         { id: 'math8', name: 'นางสาวพิศุทธิ์  แย้มบุตร', image: '35 pisut.png' },
@@ -32,7 +32,7 @@ const teachersData = {
         { id: 'sci13', name: 'นางสาวพิมชนก  เจริญชีพ', image: 'thansiri.jpg' },
         { id: 'sci14', name: 'นายสุนทร อุ่นทวี', image: '42 sunthon.png' },
         { id: 'sci15', name: 'นายสุพจน์  วิจิตรเวชการ', image: 'sukon.jpg' },
-        { id: 'sci16', name: 'นายปกรณ์ บริบูรณ์ทรัพย์', image: 'thanawit.jpg' },
+        { id: 'sci16', name: 'นายปกรณ์ บริบูรณ์ทรัพย์', image: '44 pakorn.png' },
         { id: 'sci17', name: 'นายพงศ์พัทธ์  เจริญลาภลอย', image: 'thanyathon.jpg' },
         { id: 'sci18', name: 'นายภควรรษ  รัตนภานพ', image: 'butsaraphon.jpg' },
         { id: 'sci19', name: 'นายอัษฎา สังขะจาย', image: 'benjawan.jpg' },
@@ -53,7 +53,7 @@ const teachersData = {
     foreign: [
         { id: 'foreign1', name: 'นางอริสา ขันโฑ', image: '23 arisa.png' },
         { id: 'foreign2', name: 'นางจำนงจิต ยะโสธร', image: 'nawarat.jpg' },
-        { id: 'foreign3', name: 'นางสาวสังวาลย์ จันละมูล', image: 'thamonwan.jpg' },
+        { id: 'foreign3', name: 'นางสาวสังวาลย์ จันละมูล', image: '50 sangwan.png' },
         { id: 'foreign4', name: 'นางสาวทยากร ศักดิ์ศรีเท้า', image: '36 thayakorn.png' },
         { id: 'foreign5', name: 'นางสาวอจิระวดี ไชยบุตร', image: '40 ajirawadee.png' },
         { id: 'foreign6', name: 'นางสาวธนิตา เผ่าพงศ์ษา', image: '24 thanitra.png' },
@@ -76,7 +76,7 @@ const teachersData = {
         { id: 'soc2', name: 'นางสาวรวิปรียา เทศแย้ม', image: '7 rawipreeya' },
         { id: 'soc3', name: 'นางสาวบุบผา บุญส่ง', image: 'airin.jpg' },
         { id: 'soc4', name: 'นางสาวภัทรานิษฐ์ แปงต่อม', image: '19 patthranit.png' },
-        { id: 'soc5', name: 'นางสาวพรทิพย์ แดงชาติแท้', image: 'phonnipha.jpg' },
+        { id: 'soc5', name: 'นางสาวพรทิพย์ แดงชาติแท้', image: '52 pornthip.png' },
         { id: 'soc6', name: 'นายสุระศักดิ์ ด้วงขวิด', image: '1. surasuk.png' },
         { id: 'soc7', name: 'นายธีรศักดิ์ ชลรัตน์อมฤต', image: '41 threerasuk.png' },
         { id: 'soc8', name: 'ว่าที่ร้อยตรี อนันต์ ชูช่วย', image: 'phatthanan.jpg' },
@@ -91,14 +91,14 @@ const teachersData = {
         { id: 'pe5', name: 'นายทวีเกียรติ วงแหวน', image: '21 thaweekieat.png' }
     ],
     career: [
-        { id: 'car1', name: 'นางนฤภร ราชานาค', image: 'jeerawan.jpg' },
-        { id: 'car2', name: 'นางชนัญกาญจน์ หอมกลิ่น', image: 'sunaree.jpg' },
+        { id: 'car1', name: 'นางนฤภร ราชานาค', image: '48 nareupon.png' },
+        { id: 'car2', name: 'นางชนัญกาญจน์ หอมกลิ่น', image: '43 chanankarn.png' },
         { id: 'car3', name: 'นายโชติปกรณ์ ขวัญมงคล', image: '37 chothipakorn.png' },
-        { id: 'car4', name: 'นางราตรี อรชร', image: 'paiboon.jpg' },
-        { id: 'car5', name: 'นางสาวสาวิตรี วงษ์สวรรค์', image: 'parina.jpg' },
+        { id: 'car4', name: 'นางราตรี อรชร', image: '46 ratree.png' },
+        { id: 'car5', name: 'นางสาวสาวิตรี วงษ์สวรรค์', image: '45 sawitree.png' },
         { id: 'car6', name: 'นางสาวปัทมา โสภาเลิศ', image: 'paiboon.jpg' },
         { id: 'car7', name: 'นางสาวสุรางคนา ยงสุวรรณ', image: 'parina.jpg' },
-        { id: 'car8', name: 'นางสาวอัญศิกานต์ ยิ้มภากรณ์', image: 'paiboon.jpg' }
+        { id: 'car8', name: 'นางสาวอัญศิกานต์ ยิ้มภากรณ์', image: '47 unsikarn.png' }
     ],
     art: [
         { id: 'art1', name: 'นายตฤณ คงอยู่สุข', image: 'natthakan.jpg' },
