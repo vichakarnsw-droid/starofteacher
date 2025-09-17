@@ -40,9 +40,9 @@ const teachersData = {
     ],
     thai: [
         { id: 'thai1', name: 'นางสาวสุชิรา แสงทองอร่าม', image: '2. suchira.png' },
-        { id: 'thai2', name: 'นางพรอุมา แก้วจิตต์', image: 'kornwan.jpg' },
-        { id: 'thai3', name: 'นางสาวปรารถนา จันทร์ไทย', image: 'chanyong.jpg' },
-        { id: 'thai4', name: 'นางณัฐิกา ปัตยุรักษ์', image: 'bampen.jpg' },
+        { id: 'thai2', name: 'นางพรอุมา แก้วจิตต์', image: '3. ponduma.png' },
+        { id: 'thai3', name: 'นางสาวปรารถนา จันทร์ไทย', image: '4. pradthana.png' },
+        { id: 'thai4', name: 'นางณัฐิกา ปัตยุรักษ์', image: '8 natthika' },
         { id: 'thai5', name: 'นางสาวกันยกานต์ จันชนะ', image: 'chutima.jpg' },
         { id: 'thai6', name: 'นายเฉลิมศักดิ์ ลาภส่งผล', image: 'rattanasak.jpg' },
         { id: 'thai7', name: 'นางสาวเปรมจิต ชินวงษ์', image: 'thanakorn.jpg' },
@@ -72,20 +72,20 @@ const teachersData = {
         { id: 'foreign19', name: 'Ceng Jia qi', image: 'nitchnipha.jpg' }
     ],
     social: [
-        { id: 'soc1', name: 'นายชุมสิน กาญจนทอง', image: 'thanakorn2.jpg' },
-        { id: 'soc2', name: 'นางสาวรวิปรียา เทศแย้ม', image: 'sireekorn.jpg' },
+        { id: 'soc1', name: 'นายชุมสิน กาญจนทอง', image: '5 chumsin.png' },
+        { id: 'soc2', name: 'นางสาวรวิปรียา เทศแย้ม', image: '7 rawipreeya' },
         { id: 'soc3', name: 'นางสาวบุบผา บุญส่ง', image: 'airin.jpg' },
         { id: 'soc4', name: 'นางสาวภัทรานิษฐ์ แปงต่อม', image: 'praphatson.jpg' },
         { id: 'soc5', 'name': 'นางสาวพรทิพย์ แดงชาติแท้', image: 'phonnipha.jpg' },
         { id: 'soc6', name: 'นายสุระศักดิ์ ด้วงขวิด', image: '1. surasuk.png' },
         { id: 'soc7', name: 'นายธีรศักดิ์ ชลรัตน์อมฤต', image: 'suphanan.jpg' },
         { id: 'soc8', name: 'ว่าที่ร้อยตรี อนันต์ ชูช่วย', image: 'phatthanan.jpg' },
-        { id: 'soc9', name: 'นายจีรยศ สินธุวงษานนท์', image: 'suchada.jpg' },
+        { id: 'soc9', name: 'นายจีรยศ สินธุวงษานนท์', image: '6 jirayod.png' },
         { id: 'soc10', name: 'นางสาวจรรยา สุขขา', image: 'chatcha.jpg' }
     ],
     pe: [
         { id: 'pe1', name: 'นายนันทวัฒน์ พรมหาชัย', image: 'theerawut.jpg' },
-        { id: 'pe2', name: 'นางพรรณี ครุฑเสม', image: 'chatchawan.jpg' },
+        { id: 'pe2', name: 'นางพรรณี ครุฑเสม', image: '12 pannee.png' },
         { id: 'pe3', name: 'นายณัฐวุฒิ เชื้อปรางค์', image: 'anuphong.jpg' },
         { id: 'pe4', name: 'นายอาชาวิน บุญเกิด', image: 'amwika.jpg' },
         { id: 'pe5', name: 'นายทวีเกียรติ วงแหวน', image: 'charipot.jpg' }
@@ -108,9 +108,9 @@ const teachersData = {
         { id: 'art5', name: 'นายไพศาล คำหอม', image: 'phanlop.jpg' }
     ],
     guidance: [
-        { id: 'gui1', name: 'นางกันยนา สุรชิต', image: 'suwanna.jpg' },
-        { id: 'gui2', name: 'นางลักขณา โพธิ์ทองโชติกุล', image: 'natchatichawadee.jpg' },
-        { id: 'gui2', name: 'นางสาวประภาภรณ์ รุ่งเรือง', image: 'natchatichawadee.jpg' }
+        { id: 'gui1', name: 'นางกันยนา สุรชิต', image: '10 kanyana.png' },
+        { id: 'gui2', name: 'นางลักขณา โพธิ์ทองโชติกุล', image: '11 rukkana.png' },
+        { id: 'gui2', name: 'นางสาวประภาภรณ์ รุ่งเรือง', image: '9 prapapon.png' }
     ]
 };
 
