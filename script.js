@@ -110,7 +110,7 @@ const teachersData = {
     guidance: [
         { id: 'gui1', name: 'นางกันยนา สุรชิต', image: '10 kanyana.png' },
         { id: 'gui2', name: 'นางลักขณา โพธิ์ทองโชติกุล', image: '11 rukkana.png' },
-        { id: 'gui2', name: 'นางสาวประภาภรณ์ รุ่งเรือง', image: '9 prapapon.png' }
+        { id: 'gui3', name: 'นางสาวประภาภรณ์ รุ่งเรือง', image: '9 prapapon.png' }
     ]
 };
 
