@@ -42,7 +42,7 @@ const teachersData = {
         { id: 'thai1', name: 'นางสาวสุชิรา แสงทองอร่าม', image: '2. suchira.png' },
         { id: 'thai2', name: 'นางพรอุมา แก้วจิตต์', image: '3. ponduma.png' },
         { id: 'thai3', name: 'นางสาวปรารถนา จันทร์ไทย', image: '4. pradthana.png' },
-        { id: 'thai4', name: 'นางณัฐิกา ปัตยุรักษ์', image: '8 natthika' },
+        { id: 'thai4', name: 'นางณัฐิกา ปัตยุรักษ์', image: '8 natthika.png' },
         { id: 'thai5', name: 'นางสาวกันยกานต์ จันชนะ', image: '15 kanyakan.png' },
         { id: 'thai6', name: 'นายเฉลิมศักดิ์ ลาภส่งผล', image: 'rattanasak.jpg' },
         { id: 'thai7', name: 'นางสาวเปรมจิต ชินวงษ์', image: '18 pramjit.png' },
