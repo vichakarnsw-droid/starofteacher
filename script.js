@@ -77,7 +77,7 @@ const teachersData = {
         { id: 'soc3', name: 'นางสาวบุบผา บุญส่ง', image: 'airin.jpg' },
         { id: 'soc4', name: 'นางสาวภัทรานิษฐ์ แปงต่อม', image: 'praphatson.jpg' },
         { id: 'soc5', 'name': 'นางสาวพรทิพย์ แดงชาติแท้', image: 'phonnipha.jpg' },
-        { id: 'soc6', name: 'นายสุระศักดิ์ ด้วงขวิด', image: 'thatsaneeya.jpg' },
+        { id: 'soc6', name: 'นายสุระศักดิ์ ด้วงขวิด', image: '1. surasuk.png' },
         { id: 'soc7', name: 'นายธีรศักดิ์ ชลรัตน์อมฤต', image: 'suphanan.jpg' },
         { id: 'soc8', name: 'ว่าที่ร้อยตรี อนันต์ ชูช่วย', image: 'phatthanan.jpg' },
         { id: 'soc9', name: 'นายจีรยศ สินธุวงษานนท์', image: 'suchada.jpg' },
