@@ -44,7 +44,7 @@ const teachersData = {
         { id: 'thai3', name: 'นางสาวปรารถนา จันทร์ไทย', image: '4. pradthana.png' },
         { id: 'thai4', name: 'นางณัฐิกา ปัตยุรักษ์', image: '8 natthika.png' },
         { id: 'thai5', name: 'นางสาวกันยกานต์ จันชนะ', image: '15 kanyakan.png' },
-        { id: 'thai6', name: 'นายเฉลิมศักดิ์ ลาภส่งผล', image: 'rattanasak.jpg' },
+        { id: 'thai6', name: 'นายเฉลิมศักดิ์ ลาภส่งผล', image: '82 charemsak.png' },
         { id: 'thai7', name: 'นางสาวเปรมจิต ชินวงษ์', image: '18 pramjit.png' },
         { id: 'thai8', name: 'นางสาวประเทือง บัวเผื่อน', image: '76 pratheng.png' },
         { id: 'thai9', name: 'นางสาวนงลักษณ์ แดงเพ็ง', image: '13 nongruk.png' },
