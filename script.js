@@ -64,11 +64,11 @@ const teachersData = {
         { id: 'foreign11', name: 'นางสาวฉัตรรดา ประเสริฐศรี', image: '28 chatrada.png' },
         { id: 'foreign12', name: 'นางสาวปัทมาวดี นิลประดับ', image: '29 pathamawadee.png' },
         { id: 'foreign13', name: 'นางสาวปพิชญา กลับประดิษฐ', image: 'wathiphon.jpg' },
-        { id: 'foreign14', name: 'Ms. Nerissa  J.  Denilla', image: 'onphat.jpg' },
-        { id: 'foreign15', name: 'Mr. Steven J Walden', image: 'panita.jpg' },
-        { id: 'foreign16', name: 'Ms. Emily  Mirembe', image: 'siriamphai.jpg' },
-        { id: 'foreign17', name: 'Mr. Rusty Nino Felipe Mercado', image: 'nalinphat.jpg' },
-        { id: 'foreign18', name: 'Ms. Patricia Maxine Dazo Vergara', image: 'chittima.jpg' },
+        { id: 'foreign14', name: 'Ms. Nerissa  J.  Denilla', image: '86 Nerissa.png' },
+        { id: 'foreign15', name: 'Mr. Steven J Walden', image: '83 Steven.png' },
+        { id: 'foreign16', name: 'Ms. Emily  Mirembe', image: '85 Emily.png' },
+        { id: 'foreign17', name: 'Mr. Rusty Nino Felipe Mercado', image: '87 Rusty.png' },
+        { id: 'foreign18', name: 'Ms. Patricia Maxine Dazo Vergara', image: '84 Patricia.png' },
         { id: 'foreign19', name: 'Ceng Jia qi', image: 'nitchnipha.jpg' }
     ],
     social: [
