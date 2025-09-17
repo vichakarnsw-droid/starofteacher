@@ -73,7 +73,7 @@ const teachersData = {
     ],
     social: [
         { id: 'soc1', name: 'นายชุมสิน กาญจนทอง', image: '5 chumsin.png' },
-        { id: 'soc2', name: 'นางสาวรวิปรียา เทศแย้ม', image: '7 rawipreeya' },
+        { id: 'soc2', name: 'นางสาวรวิปรียา เทศแย้ม', image: '7 rawipreeya.png' },
         { id: 'soc3', name: 'นางสาวบุบผา บุญส่ง', image: '69 buppha.png' },
         { id: 'soc4', name: 'นางสาวภัทรานิษฐ์ แปงต่อม', image: '19 patthranit.png' },
         { id: 'soc5', name: 'นางสาวพรทิพย์ แดงชาติแท้', image: '52 pornthip.png' },
