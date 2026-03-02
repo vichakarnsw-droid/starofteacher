@@ -30,6 +30,7 @@ const teachersData = {
         { id: 'sci11', name: 'นางสาวลักษิกา  ผลพิมาย', image: '59 luksika.png' },
         { id: 'sci12', name: 'นางสาวธนาภรณ์  เจริญผล', image: '53 thanaporn.png' },
         { id: 'sci13', name: 'นางสาวพิมชนก  เจริญชีพ', image: '62 pimchanok.png' },
+        { id: 'sci18', name: 'นางสาวอาภาภัทร การบุญ', image: '92-Arpaphat.png' },
         { id: 'sci14', name: 'นายสุนทร อุ่นทวี', image: '42 sunthon.png' },
         { id: 'sci15', name: 'นายสุพจน์  วิจิตรเวชการ', image: '78 suphod.png' },
         { id: 'sci16', name: 'นายปกรณ์ บริบูรณ์ทรัพย์', image: '44 pakorn.png' },
@@ -86,6 +87,7 @@ const teachersData = {
     pe: [
         { id: 'pe1', name: 'นายนันทวัฒน์ พรมหาชัย', image: '81 nanthawat.png' },
         { id: 'pe2', name: 'นางพรรณี ครุฑเสม', image: '12 pannee.png' },
+        { id: 'pe3', name: 'นางสาวศรีชล สอดสุข', image: '93-Srichon' },
         { id: 'pe3', name: 'นายณัฐวุฒิ เชื้อปรางค์', image: '80 natthawut.png' },
         { id: 'pe4', name: 'นายอาชาวิน บุญเกิด', image: '14 archawin.png' },
         { id: 'pe5', name: 'นายทวีเกียรติ วงแหวน', image: '21 thaweekieat.png' }
