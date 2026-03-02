@@ -87,7 +87,7 @@ const teachersData = {
     pe: [
         { id: 'pe1', name: 'นายนันทวัฒน์ พรมหาชัย', image: '81 nanthawat.png' },
         { id: 'pe2', name: 'นางพรรณี ครุฑเสม', image: '12 pannee.png' },
-        { id: 'pe3', name: 'นางสาวศรีชล สอดสุข', image: '93-Srichon' },
+        { id: 'pe3', name: 'นางสาวศรีชล สอดสุข', image: '93-Srichon.png' },
         { id: 'pe3', name: 'นายณัฐวุฒิ เชื้อปรางค์', image: '80 natthawut.png' },
         { id: 'pe4', name: 'นายอาชาวิน บุญเกิด', image: '14 archawin.png' },
         { id: 'pe5', name: 'นายทวีเกียรติ วงแหวน', image: '21 thaweekieat.png' }
