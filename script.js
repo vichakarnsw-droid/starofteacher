@@ -30,14 +30,14 @@ const teachersData = {
         { id: 'sci11', name: 'นางสาวลักษิกา  ผลพิมาย', image: '59 luksika.png' },
         { id: 'sci12', name: 'นางสาวธนาภรณ์  เจริญผล', image: '53 thanaporn.png' },
         { id: 'sci13', name: 'นางสาวพิมชนก  เจริญชีพ', image: '62 pimchanok.png' },
-        { id: 'sci18', name: 'นางสาวอาภาภัทร การบุญ', image: '92-Arpaphat.png' },
-        { id: 'sci14', name: 'นายสุนทร อุ่นทวี', image: '42 sunthon.png' },
-        { id: 'sci15', name: 'นายสุพจน์  วิจิตรเวชการ', image: '78 suphod.png' },
-        { id: 'sci16', name: 'นายปกรณ์ บริบูรณ์ทรัพย์', image: '44 pakorn.png' },
-        { id: 'sci17', name: 'นายพงศ์พัทธ์  เจริญลาภลอย', image: '79 pongpat.png' },
-        { id: 'sci18', name: 'นายภควรรษ  รัตนภานพ', image: '68 pakkawat.png' },
-        { id: 'sci19', name: 'นายอัษฎา สังขะจาย', image: '66 atsada.png' },
-        { id: 'sci20', name: 'นางสาวศศิธร ตรีพิมล', image: '89 sasithon.png' }
+        { id: 'sci14', name: 'นางสาวอาภาภัทร การบุญ', image: '92-Arpaphat.png' },
+        { id: 'sci15', name: 'นายสุนทร อุ่นทวี', image: '42 sunthon.png' },
+        { id: 'sci16', name: 'นายสุพจน์  วิจิตรเวชการ', image: '78 suphod.png' },
+        { id: 'sci17', name: 'นายปกรณ์ บริบูรณ์ทรัพย์', image: '44 pakorn.png' },
+        { id: 'sci18', name: 'นายพงศ์พัทธ์  เจริญลาภลอย', image: '79 pongpat.png' },
+        { id: 'sci19', name: 'นายภควรรษ  รัตนภานพ', image: '68 pakkawat.png' },
+        { id: 'sci20', name: 'นายอัษฎา สังขะจาย', image: '66 atsada.png' },
+        { id: 'sci21', name: 'นางสาวศศิธร ตรีพิมล', image: '89 sasithon.png' }
     ],
     thai: [
         { id: 'thai1', name: 'นางสาวสุชิรา แสงทองอร่าม', image: '2. suchira.png' },
@@ -88,9 +88,8 @@ const teachersData = {
         { id: 'pe1', name: 'นายนันทวัฒน์ พรมหาชัย', image: '81 nanthawat.png' },
         { id: 'pe2', name: 'นางพรรณี ครุฑเสม', image: '12 pannee.png' },
         { id: 'pe3', name: 'นางสาวศรีชล สอดสุข', image: '93-Srichon.png' },
-        { id: 'pe3', name: 'นายณัฐวุฒิ เชื้อปรางค์', image: '80 natthawut.png' },
-        { id: 'pe4', name: 'นายอาชาวิน บุญเกิด', image: '14 archawin.png' },
-        { id: 'pe5', name: 'นายทวีเกียรติ วงแหวน', image: '21 thaweekieat.png' }
+        { id: 'pe4', name: 'นายณัฐวุฒิ เชื้อปรางค์', image: '80 natthawut.png' },
+        { id: 'pe5', name: 'นายอาชาวิน บุญเกิด', image: '14 archawin.png' },
     ],
     career: [
         { id: 'car1', name: 'นางนฤภร ราชานาค', image: '48 nareupon.png' },
