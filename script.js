@@ -35,8 +35,8 @@ const teachersData = {
         { id: 'sci17', name: 'นายปกรณ์ บริบูรณ์ทรัพย์', image: '44 pakorn.png' },
         { id: 'sci18', name: 'นายพงศ์พัทธ์  เจริญลาภลอย', image: '79 pongpat.png' },
         { id: 'sci19', name: 'นายภควรรษ  รัตนภานพ', image: '68 pakkawat.png' },
-        { id: 'sci20', name: 'นายอัษฎา สังขะจาย', image: '66 atsada.png' },
-        { id: 'sci21', name: 'นางสาวศศิธร ตรีพิมล', image: '89 sasithon.png' }
+        { id: 'sci20', name: 'นายวัฒนา บาระเฮ็ม', image: '99 wattana.png' },
+        { id: 'sci21', name: 'นายวิสิทธิ์ ฟุ้งกีรติ', image: '98 wisut.png' }
     ],
     thai: [
         { id: 'thai1', name: 'นางสาวสุชิรา แสงทองอร่าม', image: '2. suchira.png' },
@@ -49,7 +49,7 @@ const teachersData = {
         { id: 'thai8', name: 'นางสาวประเทือง บัวเผื่อน', image: '76 pratheng.png' },
         { id: 'thai9', name: 'นางสาวนงลักษณ์ แดงเพ็ง', image: '13 nongruk.png' },
         { id: 'thai10', name: 'นางสาวปัณฑิตา พูลสวัสดิ์', image: '38 panthita.png' },
-        { id: 'thai9', name: 'นายอธิวัฒน์ พูลเพิ่ม', image: '13 nongruk.png' }
+        { id: 'thai9', name: 'นายอธิวัฒน์ พูลเพิ่ม', image: '97 arthi.png' }
     ],
     foreign: [
         { id: 'foreign1', name: 'นางอริสา ขันโฑ', image: '23 arisa.png' },
@@ -75,6 +75,7 @@ const teachersData = {
         { id: 'tforeign6', name: 'Miss.Ceng Jia qi', image: '91 Ceng Jia qi.png' },
         { id: 'tforeign7', name: 'Mr.Jeffrey M. Asuncion', image: '95-Jeffrey.png' },
         { id: 'tforeign8', name: 'Mr.Wilmer A. Kiling', image: '94-Wilmer.png' },
+        { id: 'tforeign8', name: 'Mr.Alihan Akman', image: '96 alihan.png' }
     ],
     social: [
         { id: 'soc1', name: 'นายชุมสิน กาญจนทอง', image: '5 chumsin.png' },
