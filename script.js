@@ -78,14 +78,13 @@ const teachersData = {
     social: [
         { id: 'soc1', name: 'นายชุมสิน กาญจนทอง', image: '5 chumsin.png' },
         { id: 'soc2', name: 'นางสาวรวิปรียา เทศแย้ม', image: '7 rawipreeya.png' },
-        { id: 'soc3', name: 'นางสาวบุบผา บุญส่ง', image: '69 buppha.png' },
-        { id: 'soc4', name: 'นางสาวภัทรานิษฐ์ แปงต่อม', image: '19 patthranit.png' },
-        { id: 'soc5', name: 'นางสาวพรทิพย์ แดงชาติแท้', image: '52 pornthip.png' },
-        { id: 'soc6', name: 'นายสุระศักดิ์ ด้วงขวิด', image: '1. surasuk.png' },
-        { id: 'soc7', name: 'นายธีรศักดิ์ ชลรัตน์อมฤต', image: '41 threerasuk.png' },
-        { id: 'soc8', name: 'ว่าที่ร้อยตรี อนันต์ ชูช่วย', image: '57 anan.png' },
-        { id: 'soc9', name: 'นายจีรยศ สินธุวงษานนท์', image: '6 jirayod.png' },
-        { id: 'soc10', name: 'นางสาวจรรยา สุขขา', image: '20 juanya.png' }
+        { id: 'soc3', name: 'นางสาวภัทรานิษฐ์ แปงต่อม', image: '19 patthranit.png' },
+        { id: 'soc4', name: 'นางสาวพรทิพย์ แดงชาติแท้', image: '52 pornthip.png' },
+        { id: 'soc5', name: 'นายสุระศักดิ์ ด้วงขวิด', image: '1. surasuk.png' },
+        { id: 'soc6', name: 'นายธีรศักดิ์ ชลรัตน์อมฤต', image: '41 threerasuk.png' },
+        { id: 'soc7', name: 'ว่าที่ร้อยตรี อนันต์ ชูช่วย', image: '57 anan.png' },
+        { id: 'soc8', name: 'นายจีรยศ สินธุวงษานนท์', image: '6 jirayod.png' },
+        { id: 'soc9', name: 'นางสาวจรรยา สุขขา', image: '20 juanya.png' }
     ],
     pe: [
         { id: 'pe1', name: 'นายนันทวัฒน์ พรมหาชัย', image: '81 nanthawat.png' },
