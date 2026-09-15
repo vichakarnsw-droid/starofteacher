@@ -49,7 +49,7 @@ const teachersData = {
         { id: 'thai8', name: 'นางสาวประเทือง บัวเผื่อน', image: '76 pratheng.png' },
         { id: 'thai9', name: 'นางสาวนงลักษณ์ แดงเพ็ง', image: '13 nongruk.png' },
         { id: 'thai10', name: 'นางสาวปัณฑิตา พูลสวัสดิ์', image: '38 panthita.png' },
-        { id: 'thai9', name: 'นายอธิวัฒน์ พูลเพิ่ม', image: '97 arthi.png' }
+        { id: 'thai11', name: 'นายอธิวัฒน์ พูลเพิ่ม', image: '97 arthi.png' }
     ],
     foreign: [
         { id: 'foreign1', name: 'นางอริสา ขันโฑ', image: '23 arisa.png' },
