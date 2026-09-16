@@ -14,7 +14,8 @@ const teachersData = {
         { id: 'math8', name: 'นางสาวพิศุทธิ์  แย้มบุตร', image: '35 pisut.png' },
         { id: 'math9', name: 'นางสาวศิริพร  สุขเกษม', image: '55 siriporn.png' },
         { id: 'math10', name: 'นางสาวธีร์วรา ทับชุม', image: '25 treewara.png' },
-        { id: 'math11', name: 'นางสาวณัฎฐริณี ช่วยคง', image: '27 nattharanee.png' }
+        { id: 'math11', name: 'นางสาวณัฎฐริณี ช่วยคง', image: '27 nattharanee.png' },
+        { id: 'math12', name: 'นายกิตติพจน์ ขวาวศิริ', image: '102 kittiphod.png' }
     ],
     science: [
         { id: 'sci1', name: 'นางจันทร์เพ็ญ  ศรีภุมมา', image: '60 janpeng.png' },
@@ -64,6 +65,7 @@ const teachersData = {
         { id: 'foreign11', name: 'นางสาวฉัตรรดา ประเสริฐศรี', image: '28 chatrada.png' },
         { id: 'foreign12', name: 'นางสาวปัทมาวดี นิลประดับ', image: '29 pathamawadee.png' },
         { id: 'foreign13', name: 'นางสาวปพิชญา กลับประดิษฐ', image: '90 papichaya.png' },
+        { id: 'foreign14', name: 'นายณัฐฐวัฒน์ ประเสริฐชัย', image: '101 nattawat.png' }
     ],
       tforeign: [
         { id: 'tforeign1', name: 'Ms. Nerissa  J.  Denilla', image: '86 Nerissa.png' },
@@ -85,7 +87,9 @@ const teachersData = {
         { id: 'soc6', name: 'นายธีรศักดิ์ ชลรัตน์อมฤต', image: '41 threerasuk.png' },
         { id: 'soc7', name: 'ว่าที่ร้อยตรี อนันต์ ชูช่วย', image: '57 anan.png' },
         { id: 'soc8', name: 'นายจีรยศ สินธุวงษานนท์', image: '6 jirayod.png' },
-        { id: 'soc9', name: 'นางสาวจรรยา สุขขา', image: '20 juanya.png' }
+        { id: 'soc9', name: 'นางสาวจรรยา สุขขา', image: '20 juanya.png' },
+        { id: 'soc10', name: 'นางสาวเกตน์สิรี บุญเกิด', image: '104 kasiree.png' },
+        { id: 'soc11', name: 'นางสาวปาลิตา กลั่นศรี', image: '106 palita.png' }
     ],
     pe: [
         { id: 'pe1', name: 'นายนันทวัฒน์ พรมหาชัย', image: '81 nanthawat.png' },
@@ -109,7 +113,9 @@ const teachersData = {
         { id: 'art2', name: 'นายพลวัชร สำเรียนรัมย์', image: '71 ponlawat.png' },
         { id: 'art3', name: 'นายปณิธิ คุ้มทรัพย์', image: '75 panithi.png' },
         { id: 'art4', name: 'นางสาวดาวรุ่ง เย็นใส', image: '74 dowrung.png' },
-        { id: 'art5', name: 'นายไพศาล คำหอม', image: '88 paisan.png' }
+        { id: 'art5', name: 'นายไพศาล คำหอม', image: '88 paisan.png' },
+        { id: 'art6', name: 'นางสาวอาทิตยา อภิรักษ์ชัยพร', image: '103 atitaya.png' },
+        { id: 'art7', name: 'นางสาวธนันญุตา กลั่นเสนาะ', image: '105 Tananyuta.png' }
     ],
     guidance: [
         { id: 'gui1', name: 'นางกันยนา สุรชิต', image: '10 kanyana.png' },
